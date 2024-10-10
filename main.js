@@ -47,19 +47,20 @@ buttonEl.addEventListener("click", function (event) {
 
     const numIndovinati=[];
 
-    if (numeriCausali.includes(input1El.value) ) {
+        console.log(numeriCausali, Number(input1El.value), numeriCausali.includes(Number(input1El.value)))
+    if (numeriCausali.includes(Number(input1El.value)) ) {
         numIndovinati.push(input1El.value);
     }
-    if (numeriCausali.includes(input2El.value) ) {
+    if (numeriCausali.includes(Number(input2El.value)) ) {
         numIndovinati.push(input2El.value);
     }
-    if (numeriCausali.includes(input3El.value) ) {
+    if (numeriCausali.includes(Number(input3El.value)) ) {
         numIndovinati.push(input3El.value);
     }
-    if (numeriCausali.includes(input4El.value) ) {
+    if (numeriCausali.includes(Number(input4El.value)) ) {
         numIndovinati.push(input4El.value);
     }
-    if (numeriCausali.includes(input5El.value) ) {
+    if (numeriCausali.includes(Number(input5El.value)) ) {
         numIndovinati.push(input5El.value);
     }
 
