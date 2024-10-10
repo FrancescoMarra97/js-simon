@@ -25,8 +25,10 @@ console.log(numeriCausali);
 const numContainerEl = document.getElementById("numContainer");
 numContainerEl.innerText= numeriCausali.join(", ")
 
+//seleziono il form dal Dom
+let formEl = document.querySelector("form");
 //fase 3 dopo 30 secondi farli scomparire
 setTimeout(() => {
     numContainerEl.style.visibility ="hidden"
-    
+    formEl.style.visibility="visible"
 }, 30000);
