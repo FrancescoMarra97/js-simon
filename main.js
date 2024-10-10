@@ -31,7 +31,7 @@ let formEl = document.querySelector("form");
 setTimeout(() => {
     numContainerEl.style.visibility ="hidden"
     formEl.style.visibility="visible"
-}, 3000);
+}, 30000);
 
 //fase 4 raccogliamo i numeri inseriti
 const buttonEl = document.getElementById("button")
