@@ -17,4 +17,10 @@ function generaNum() {
     return numbers;
 }
 
-//fase 2
+//fase 2 visualizzare in pagina i 5 numeri 
+
+let numeriCausali=generaNum();
+console.log(numeriCausali);
+
+const numContainerEl = document.getElementById("numContainer");
+numContainerEl.innerText= numeriCausali.join(", ")
