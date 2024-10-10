@@ -56,9 +56,6 @@ buttonEl.addEventListener("click", function (event) {
     if (numeriCausali.includes(input3El.value) ) {
         numIndovinati.push(input3El.value);
     }
-    if (numeriCausali.includes(input3El.value) ) {
-        numIndovinati.push(input3El.value);
-    }
     if (numeriCausali.includes(input4El.value) ) {
         numIndovinati.push(input4El.value);
     }
