@@ -24,3 +24,9 @@ console.log(numeriCausali);
 
 const numContainerEl = document.getElementById("numContainer");
 numContainerEl.innerText= numeriCausali.join(", ")
+
+//fase 3 dopo 30 secondi farli scomparire
+setTimeout(() => {
+    numContainerEl.style.visibility ="hidden"
+    
+}, 30000);
