@@ -12,7 +12,9 @@ function generaNum() {
     for (let i = 0; i < 5; i++) {
    //genero un numero casuale in questo caso tra 1 e 100
     let numeroGenerato = Math.floor(Math.random() * (100 - 1) ) + 1;
-    
+    numbers.push(numeroGenerato);
     }
-
+    return numbers;
 }
+
+//fase 2
