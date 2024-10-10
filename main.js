@@ -34,8 +34,46 @@ setTimeout(() => {
 }, 30000);
 
 //fase 4 raccogliamo i numeri inseriti
+const buttonEl = document.getElementById("button")
+const input1El = document.getElementById("input1")
+const input2El = document.getElementById("input2")
+const input3El = document.getElementById("input3")
+const input4El = document.getElementById("input4")
+const input5El = document.getElementById("input5")
 
-formEl.addEventListener("submit", function (event) {
+const resultContainer = document.getElementById("resultContainer");
+buttonEl.addEventListener("click", function (event) {
     event.preventDefault();
-    
+
+    const numIndovinati=[];
+
+    if (numeriCausali.includes(input1El.value) ) {
+        numIndovinati.push(input1El.value);
+    }
+    if (numeriCausali.includes(input2El.value) ) {
+        numIndovinati.push(input2El.value);
+    }
+    if (numeriCausali.includes(input3El.value) ) {
+        numIndovinati.push(input3El.value);
+    }
+    if (numeriCausali.includes(input3El.value) ) {
+        numIndovinati.push(input3El.value);
+    }
+    if (numeriCausali.includes(input4El.value) ) {
+        numIndovinati.push(input4El.value);
+    }
+    if (numeriCausali.includes(input5El.value) ) {
+        numIndovinati.push(input5El.value);
+    }
+
+    console.log(`Hai indovinato i seguenti numeri: ${numIndovinati.join(", ")}`);
+
+
+
+    if (numIndovinati.length>0) {
+        resultContainer.innerText = `Hai indovinato i seguenti numeri: ${numIndovinati.join(", ")}`
+    }
 })
+
+
+

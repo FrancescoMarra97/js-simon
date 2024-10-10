@@ -16,29 +16,31 @@
     <form class="py-4" style="visibility: hidden;">
         <div class="row g-3">
             <div class="col-sm">
-                <input type="number" class="form-control" placeholder="indovina il numero" aria-label="">
+                <input id="input1" type="number" class="form-control" placeholder="indovina il numero" aria-label="">
             </div>
             <div class="col-sm">
-                <input type="number" class="form-control" placeholder="indovina il numero" aria-label="">
+                <input id="input2" type="number" class="form-control" placeholder="indovina il numero" aria-label="">
             </div>
             <div class="col-sm">
-                <input type="number" class="form-control" placeholder="indovina il numero" aria-label="">
+                <input id="input3" type="number" class="form-control" placeholder="indovina il numero" aria-label="">
             </div>
             <div class="col-sm">
-                <input type="number" class="form-control" placeholder="indovina il numero" aria-label="">
+                <input id="input4" type="number" class="form-control" placeholder="indovina il numero" aria-label="">
             </div>
             <div class="col-sm">
-                <input type="number" class="form-control" placeholder="indovina il numero" aria-label="">
+                <input id="input5" type="number" class="form-control" placeholder="indovina il numero" aria-label="">
             </div>    
         </div>
         <div class="d-flex justify-content-center">
             <div class="col-auto py-4">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button id="button" type="submit" class="btn btn-primary">Submit</button>
             </div>
             <div class="col-auto py-4 ms-2">
                 <button type="reset" class="btn btn-dark">Annulla</button>
             </div>
-        </div>    
+        </div>
+        
+        <div id="resultContainer" class="py-4"></div>
     </form>
 </div>
     <script src="main.js"></script>
