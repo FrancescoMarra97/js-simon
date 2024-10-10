@@ -32,3 +32,10 @@ setTimeout(() => {
     numContainerEl.style.visibility ="hidden"
     formEl.style.visibility="visible"
 }, 30000);
+
+//fase 4 raccogliamo i numeri inseriti
+
+formEl.addEventListener("submit", function (event) {
+    event.preventDefault();
+    
+})
