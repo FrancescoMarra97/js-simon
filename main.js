@@ -31,7 +31,7 @@ let formEl = document.querySelector("form");
 setTimeout(() => {
     numContainerEl.style.visibility ="hidden"
     formEl.style.visibility="visible"
-}, 30000);
+}, 3000);
 
 //fase 4 raccogliamo i numeri inseriti
 const buttonEl = document.getElementById("button")
@@ -72,6 +72,8 @@ buttonEl.addEventListener("click", function (event) {
 
     if (numIndovinati.length>0) {
         resultContainer.innerText = `Hai indovinato i seguenti numeri: ${numIndovinati.join(", ")}`
+    } else {
+        resultContainer.innerText = `Non hai indovinato nessun numero`
     }
 })
 
